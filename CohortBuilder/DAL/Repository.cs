@@ -20,6 +20,11 @@ namespace CohortBuilder.DAL
         }
 
         // Add a Cohort
+        public bool AddCohort(string name)
+        {
+            throw new NotImplementedException();
+        }
+
         // Add a Student to a Cohort
         // Add an Instructor to a Cohort
     }

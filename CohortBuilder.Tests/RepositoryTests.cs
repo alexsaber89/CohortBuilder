@@ -86,5 +86,17 @@ namespace CohortBuilder.Tests
 
             Assert.IsNotNull(repo.Context);
         }
+
+        [TestMethod]
+        public void EnsureICanCreateCohort()
+        {
+            Repository repo = new Repository();
+            SetUpMocks();
+
+            bool expected_result = true;
+            bool actual_result = repo.AddCohort("Evening Cohort 4");
+
+            Assert.AreEqual(expected_result, actual_result);
+        }
     }
 }
